@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/face_view_height"
+    android:background="#ffd1d8e3" >
+     
+    <!-- android:cacheColorHint="#0000000"保证view在拖动时图片不消失 -->
+    <!-- android:listSelector="#0000000"保证点击item时背景色为透明 -->
+    <!-- android:stretchMode="columnWidth"保证每一行的px均分给5个item -->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@null"   
+        android:fadingEdgeLength="0.0dip"
+        android:listSelector="#00000000"
+        android:numColumns="5"
+        android:stretchMode="columnWidth" />
+
+</RelativeLayout>

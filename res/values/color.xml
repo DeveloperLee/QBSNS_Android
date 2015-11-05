@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="home_weibo_list_name">#FF202020</color>
+    <color name="home_weibo_list_text">#FF414951</color>
+    <color name="white">#FFFFFF</color>
+    <color name="mainColor">#104E8B</color>
+    <color name="weiboListPressed">#EAEAEA</color>
+    <color name="timeColor">#999999</color>
+    <color name="font">#333333</color>
+    <color name="tranFontColor">#444444</color>
+    <color name="line">#DDDDDD</color>
+    <color name="imageBroder">#C3BFC3</color>
+    <color name="itemColor">#F6F6F6</color>
+    <color name="secondColor">#EEEEEE</color>
+    <color name="gray">#999999</color>
+    <color name="buttonColor">#A7B8C4</color>
+    <color name="smallFont">#666666</color>
+    <color name="numFont">#187FC4</color>
+    <color name="titleColor">#365c7c</color>
+    <color name="siteItemBgColor">#70BEFF</color>
+    <color name="contentColor">#F6F6F6</color>
+    <color name="serachButtonFont">#365c7c</color>
+    <color name="lastWeiboFont">#666666</color>
+
+    <color name="testColor">#FF0000</color> 
+    
+    
+    
+    <!--  <color name="titleColor">#193e5c</color> 
+    
+     <color name="contentColor">#d2d8de</color>
+     
+         <color name="transparentColor">#00000000</color> 
+     -->
+     
+</resources>

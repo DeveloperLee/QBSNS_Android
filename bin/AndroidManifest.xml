@@ -1,0 +1,161 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thinksns.android"
+    android:versionCode="205"
+    android:versionName="1.4" >
+
+
+     <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name="Thinksns"
+        android:icon="@drawable/new_icon"
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name" >
+        <!--友盟统计配置信息 ， value为申请友盟的Appkey-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="" >
+        </meta-data>
+		<!-- MainActivity -->
+        <activity
+            android:name=".ThinksnsActivity"
+            android:launchMode="singleTask" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ThinksnsLoginActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ThinksnsHome"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".ThinksnsMyWeibo"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name=".ThinksnsSquare"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name=".ThinksnsWeiboContent"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name=".ThinksnsWeiboContentList"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name=".ThinksnsWeiboComment"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name=".ThinksnsSend"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".ThinksnsUserInfo"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name=".ThinksnsFollow"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name=".ThinksnsUserWeibo"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name=".ThinksnsCreate"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".ThinksnsSearch"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            >
+        </activity>
+        <activity
+            android:name=".ThinksnsMore"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".ThinksnsMessageDetail"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            >
+        </activity>
+        <activity
+            android:name=".ThinksnsMessage"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".ThinksnsStartWeb"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name=".ThinksnsImageView"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+
+        <service
+            android:name=".ThinksnsMessageService"
+            android:clearTaskOnLaunch="true" >
+        </service>
+
+        <activity
+            android:name=".ThinksnsSiteList"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+        </activity>
+        <activity
+            android:name=".ThinksnsTopicActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard" >
+        </activity>
+    </application>
+</manifest>

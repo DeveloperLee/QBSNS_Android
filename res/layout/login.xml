@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_page"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/site_used_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:maxLength="10"
+            android:text="东软社区"
+            android:textColor="@color/white"
+            android:textSize="@dimen/logo" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/input_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/login_input"
+                android:hint="@string/input_hint_account"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                style="@style/login_label"
+                android:layout_alignBottom="@+id/email"
+                android:layout_alignTop="@+id/email"
+                android:text="@string/label_account" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/login_input"
+                android:layout_marginTop="4dp"
+                android:hint="@string/input_hint_pwd"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_psw"
+                style="@style/login_label"
+                android:layout_alignBottom="@+id/password"
+                android:layout_alignTop="@+id/password"
+                android:text="@string/label_psw" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password_layout"
+                android:layout_marginTop="75dp" >
+
+                
+                <ImageButton
+                    android:id="@+id/login"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/login_button"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

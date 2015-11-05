@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo">25dp</dimen>
+    <dimen name="title">14.0sp</dimen>
+    <dimen name="userNameSize">15sp</dimen>
+    <dimen name="contentSize">16dp</dimen>
+    <dimen name="commentSize">14dp</dimen>
+    <dimen name="timeSize">12dp</dimen>
+    <!-- 转发和评论数大小  -->
+    <dimen name="countSize">12dp</dimen>
+    <dimen name="fontSize">16dp</dimen>
+    <dimen name="smallFont">15dp</dimen>
+    <dimen name="tranFont">11sp</dimen>
+    <dimen name="messageTitle">10px</dimen>
+    <dimen name="useinfo_name">18dp</dimen>
+</resources>

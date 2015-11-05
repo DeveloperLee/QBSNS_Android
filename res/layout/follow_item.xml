@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/weibolist"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/user_header"
+        android:layout_width="@dimen/header_width_hight"
+        android:layout_height="@dimen/header_width_hight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/username"
+        android:layout_marginLeft="@dimen/body_margin_left"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/header" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end" 
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/body_margin_left"
+        android:layout_toRightOf="@+id/user_header"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontSize" >
+    </TextView>
+    <!--
+    last_weibo_text
+    android:cursorVisible="false"
+    android:layout_toLeftOf="@+id/follow_button"
+    
+    -->
+    <TextView
+        android:id="@+id/last_weibo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end" 
+        android:singleLine="true"
+        android:text="此处显示用户所发的最后一条微博"
+        android:layout_alignLeft="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/lastWeiboFont"
+        android:textSize="@dimen/last_weibo_font_size" >
+    </TextView>
+    <Button
+        android:id="@+id/follow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/username"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/body_margin_right"
+        android:background="@drawable/button_follow"
+        android:focusable="false" >
+    </Button>
+
+</RelativeLayout>

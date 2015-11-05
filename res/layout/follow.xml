@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  	android:background="@color/itemColor"
+    android:orientation="vertical" >
+
+    <com.thinksns.components.LoadingView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <com.thinksns.components.FollowList
+        android:id="@+id/follow_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    </com.thinksns.components.FollowList>
+	
+ <!--     android:background="@color/itemColor" -->
+</LinearLayout>

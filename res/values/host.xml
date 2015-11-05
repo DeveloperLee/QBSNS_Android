@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="app_name">东软社区</string>
+    <string name="exit">确认退出东软社区?</string>
+    
+    <string-array name="Http">
+  
+    <item>sns.neusoft.com</item> 
+    <item>index.php</item>
+
+
+       
+    </string-array>
+
+</resources>

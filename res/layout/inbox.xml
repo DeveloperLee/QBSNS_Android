@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/weibolist">
+	<ImageView android:src="@drawable/header"
+		android:layout_width="@dimen/header_width_hight" android:id="@+id/user_message_header"
+		android:layout_height="@dimen/header_width_hight"
+		android:layout_marginLeft="@dimen/body_margin_left"
+		android:layout_marginBottom="@dimen/body_margin_top"
+		android:layout_marginTop="@dimen/body_margin_top"></ImageView>
+	<LinearLayout android:orientation="vertical"
+		android:layout_toRightOf="@+id/user_message_header" android:layout_width="fill_parent"
+		android:id="@+id/weibo_data" android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/body_margin_top"
+		android:layout_marginBottom="@dimen/body_margin_top"
+		android:paddingBottom="@dimen/body_margin_top"
+		android:layout_marginRight="@dimen/body_margin_right"
+		android:layout_marginLeft="@dimen/body_margin_left">
+		<RelativeLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_marginBottom="@dimen/body_margin_left">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/user_name"
+				android:text="TextView" android:textSize="@dimen/fontSize"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:textColor="@color/black" android:textStyle="bold" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_centerVertical="true"
+				android:text="TextView" android:layout_alignParentRight="true"
+				android:textColor="@color/timeColor" android:textSize="@dimen/smallFont"
+				android:id="@+id/message_ctime" />
+		</RelativeLayout>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="TextView"
+			android:textColor="@color/font" android:textSize="@dimen/fontSize"
+			android:id="@+id/message_content" />
+	</LinearLayout>
+</RelativeLayout>

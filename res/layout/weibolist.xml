@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@drawable/weibolist"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/user_header"
+        android:layout_width="@dimen/header_width_hight"
+        android:layout_height="@dimen/header_width_hight"
+        android:layout_marginLeft="@dimen/body_margin_left"
+        android:layout_marginTop="@dimen/body_margin_top"
+        android:src="@drawable/header" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/weibo_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/body_margin_top"
+        android:layout_marginLeft="@dimen/body_margin_left"
+        android:layout_marginRight="@dimen/body_margin_right"
+        android:layout_marginTop="@dimen/body_margin_top"
+        android:layout_toRightOf="@+id/user_header"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/body_margin_top" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/body_margin_left"
+            android:layout_marginTop="-4.0dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Name"
+                android:textColor="@color/home_weibo_list_name"
+                android:textSize="@dimen/userNameSize"
+                android:textStyle="bold" 
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/weibo_ctime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="TextView"
+                android:textColor="@color/timeColor"
+                android:textSize="@dimen/timeSize" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/weibo_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="0.9"
+            android:text="TextView"
+            android:textColor="@color/home_weibo_list_name"
+            android:textSize="@dimen/contentSize" 
+            android:lineSpacingExtra="2.669983dp"/>
+
+        <RelativeLayout
+            android:id="@+id/weibo_count_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="-3dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/weibo_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="TextView"
+                android:textSize="@dimen/countSize" />
+
+            <TextView
+                android:id="@+id/comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/icon_review"
+                android:drawablePadding="5dp"
+                android:text="TextView"
+                android:textSize="@dimen/countSize" />
+
+            <TextView
+                android:id="@+id/transpond_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/comment_count"
+                android:drawableLeft="@drawable/icon_forward"
+                android:drawablePadding="5dp"
+                android:text="TextView"
+                android:textSize="@dimen/countSize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_weight="1">
+
+    <EditText
+        android:id="@+id/input_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/icon_search_32"
+        android:drawablePadding="5dp"
+        android:hint="@string/search_key"
+        android:paddingLeft="12dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:background="@drawable/search_bg"
+        android:textSize="16sp">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/clear_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/input_edit"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:src="@drawable/button_del"
+        android:visibility="gone" />
+
+</RelativeLayout> 
+
+        <Button
+        android:id="@+id/go_for_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/input_edit"
+        android:layout_marginLeft="5dp"
+        android:text="@string/search"
+        android:background="@drawable/button_search"
+        android:textSize="18sp"
+        android:textColor="@color/serachButtonFont" />
+    
+</LinearLayout>

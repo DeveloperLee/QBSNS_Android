@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_user_link">注册新账号</string>
+    <string name="refreshing">更新中...</string>
+    <string name="please_down">下拉可以刷新</string>
+    <string name="please_up">松开可以刷新</string>
+    <string name="last_refresh">最后更新于</string>
+    <string name="weibo_content">微博正文</string>
+    <string name="comment">评论</string>
+    <string name="transpond">转发</string>
+    <string name="send_not_content">说点什么吧...</string>
+    <string name="comment_checkbox">同时发一条微博</string>
+    <string name="transpond_checkbox">同时评论该作者</string>
+    <string name="publish">发布</string>
+    <string name="please_wait">请稍等，处理中</string>
+    <string name="comment_list">评论列表</string>
+    <string name="follow">关注</string>
+    <string name="followed">粉丝</string>
+    <string name="weibo">微博</string>
+    <string name="info">资料</string>
+    <string name="reply">回复</string>
+    <string name="message_detail">短消息详情</string>
+    <string name="home">首页</string>
+    <string name="news">信息</string>
+    <string name="search">搜索</string>
+    <string name="more">更多</string>
+    <string name="square">广场</string>
+    <string name="sendMessage">发送</string>
+    <string name="imageshow">图片浏览</string>
+    <string name="imagesave">保存</string>
+    <string name="refresh">刷新</string>
+    <string name="collection">收藏</string>
+    <string name="private_letter">私信</string>
+    <string name="logine">登陆</string>
+    <string name="register">注册</string>
+    <string name="my_sina_weibo">新浪</string>
+    <string name="site_change">切换站点</string>
+    <string name="weibo_menu_title">微博功能</string>
+        <string name="label_account">帐号:</string>
+    <string name="input_hint_account">昵称/邮箱帐号</string>
+    <string name="input_hint_pwd">在此处输入密码</string>
+    <string name="label_psw">密码:</string>
+    
+    <string name="refresh_success">刷新成功</string>
+    <string name="refresh_error">暂无更多信息</string>
+    
+    <string name="search_weibo">搜微博</string>
+    <string name="search_user">搜用户</string>
+    <string name="search_key">请输入要查询的关键词</string>
+   <string name="word_limit">输入的字数超入限制</string> 
+   <string name="check_version">检测新版本，请稍候</string> 
+   <string name="no_version">没有检测到新版本</string> 
+   <string name="check_version_error">检测版本出错，稍后再试</string> 
+   <string name="input_text_topic">\#请插入话题#</string>
+   <string name="input_text_suggest">\#Android建议反馈#</string>
+   <string name="input_text_at">\@请输入昵称</string>
+   <string name="dialog_alert">提示</string>
+   <string name="dialog_ok">确定</string>
+   <string name="dialog_delete">删除</string>
+   
+   <string name="dialog_cancel">取消</string>
+   <string name="save_draft_or_not">微博尚未发送，是否保存？</string>
+   <string name="override_draft_or_not">发现草稿已存在，是否覆盖？</string>
+   <string name="load_draft_or_not">发现草稿，是否加载？</string>
+   <string name="delete_draft">删除草稿</string>
+   
+   
+     <string name="search_alert">请输入内容</string>
+     <string name="comment_menu_title">评论功能</string>
+   
+    
+    <string-array name="camera">
+    	<item>立即拍照</item>
+    	<item>本地照片</item>
+    </string-array>
+    <string-array name="commentopts">
+    	<item>查看原微博</item>
+    	<item>查看该用户信息</item>
+    	<item>回复该评论</item>
+    </string-array>
+    <string-array name="inboxopts">
+    	<item>回复该消息</item>
+    	<item>查看该用户信息</item>
+    	<item>查看整个对话</item>
+    </string-array>
+    <string-array name="del_topts">
+    	<item>查看该用户信息</item>
+    	<item>回复该评论</item>
+    </string-array>
+	<string-array name="del_commentopts">
+    	<item>查看该用户信息</item>
+    	<item>回复该评论</item>
+    	<item>删除该评论</item>
+    </string-array>
+
+</resources>

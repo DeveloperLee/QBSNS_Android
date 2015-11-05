@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/weibolist">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.thinksns.components.ContentCommentList
+            android:id="@+id/weibo_content_mlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/weibolist" 
+            android:layout_marginBottom="70px"
+           />
+
+        <include
+            android:id="@+id/content_bar"
+            android:layout_alignParentBottom="true"
+            layout="@layout/weibo_content_bar" />
+    </RelativeLayout>
+    
+     <LinearLayout
+         android:id="@+id/hover_weibo_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:background="@color/white"
+               	android:padding="8dp"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/button_favorite1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_xin"
+                    android:src="@drawable/button_favorite" >
+                </ImageButton>
+
+                <Button
+                    android:id="@+id/button_transpond1"
+                    android:layout_width="@dimen/weibo_content_button"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_forward"
+                    android:drawableLeft="@drawable/button_ico_transpond"
+                    android:text="Button"
+                    android:textColor="@color/white" >
+                </Button>
+                <!-- android:drawableLeft="@drawable/button_ico_transpond" -->
+
+                <Button
+                    android:tag="content_list"
+                    android:id="@+id/button_comment1"
+                    android:layout_width="@dimen/weibo_content_button"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_review_off"
+                    android:drawableLeft="@drawable/button_ico_comment"
+                    android:text="Button"
+                    android:textColor="@color/white" >
+                </Button>
+            </LinearLayout>
+
+</FrameLayout>

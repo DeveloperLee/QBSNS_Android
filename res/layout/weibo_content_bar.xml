@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/content_util"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+      >
+        
+
+        <ImageButton
+            android:id="@+id/forward_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tool_bar_left"
+            android:src="@drawable/content_forward" />
+
+        <ImageButton
+            android:id="@+id/comment_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tool_bar_left"
+            android:src="@drawable/content_comment" />
+
+        <ImageButton
+            android:id="@+id/copy_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tool_bar_left"
+            android:src="@drawable/content_copy" />
+
+        <ImageButton
+            android:id="@+id/more_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tool_bar_right"
+            android:src="@drawable/content_more" />
+    </LinearLayout>
+
+</RelativeLayout>
